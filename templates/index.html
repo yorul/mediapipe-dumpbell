@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>please-muscle</title>
+</head>
+
+<body>
+<div class="flex-row">
+    <div id="camera-div" class="camera">
+        <video id="video"></video>
+        <br>
+        <br>
+        <div id="recode-start" class="button">録画開始</div>
+        <div id="recode-stop" class="button twinkle-button hidden">録画停止</div>
+    </div>
+    <div id="movie-div" class="movie hidden">
+        <video id="movie" controls playsinline></video>
+        <br>
+        <br>
+        <div id="retake" class="button">撮り直し</div>
+        <br>
+        <div id="upload" class="button">アップロード</div>
+        <div id="result" class="hidden"></div>
+    </div>
+</div>
+</body>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
