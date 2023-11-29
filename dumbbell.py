@@ -95,10 +95,6 @@ def dumbbell_lift_counter(video_path, output_path):
         cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("Usage: python pushup_app.py <input_video_path> <output_video_path>")
-        sys.exit(1)
-
     input_video_path = sys.argv[1]
     output_video_path = sys.argv[2]
     dumbbell_lift_counter(input_video_path, output_video_path)
